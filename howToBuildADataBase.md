@@ -73,22 +73,27 @@ create a folder called config
                 config  // package  is  needed in orfer to grab the mongoURI
                 put mongoURI in a const db = config.get("mongoURI"); // allows us to get any of the values in that json file
             
-            - route files-
-            // we want to break our routes  up by  resourse
-                user
-                auth
-                profile
-                post
-             create a folder in the root called routes
-                i* n that a folder called api 
-                    * users.js
-                    * auth.js
-                    * porfile.js
-                    * post.js
+    - route files-
+    // we want to break our routes  up by  resourse
+        user
+        auth
+        profile
+        post
+        create a folder in the root called routes
+        * in that a folder called api 
+            * users.js
+            * auth.js
+            * porfile.js
+            * post.js
 
-                    users.js
-                        bring in express 
-                        create express router
+            users.js
+                bring in express 
+                create express router
+                then expot file 
+                repeat for all other routes // post .auth,etc
+        in server.js 
+            make sure we can access our routes
+                * app.use()
 
 
 
