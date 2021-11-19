@@ -57,6 +57,23 @@ step 6 create scripts
    * add dev script nodemon server.js
 
 -connect database to mongodb-
+use mongodb key 
+create a folder called config
+    inside the folder create a file called default.json
+    the depenficie called config 
+        allows us to use global values we can use through our application
+        default.json file will hold all of these values
+            we want to create a global value for mongodb using the string or key we have gotten when we signed up for mongodb database
+            called a "mongoURI":
+
+        in your config file create a file called db.js
+            where we will do our mongodb connection 
+            bring in 
+                mongoose
+                config  // package  is  needed in orfer to grab the mongoURI
+                put mongoURI in a const db = config.get("mongoURI"); // allows us to get any of the values in that json file
+            
+
 
 
 
