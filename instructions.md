@@ -97,7 +97,15 @@ step 6 create scripts
             make sure we can access our routes
                 * app.use()
 
-
+-creating the user model-
+ the model is used to interact with our DB
+ create a new folder in the root called models
+ then create a file called User.js 
+        naming convention to use upper case on the start of file name in models folder
+we need to create a schema
+    is needed in order to create a model
+    we make the schema by giveing it the fields we want
+        bring in mongoose
 
 
 
