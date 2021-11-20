@@ -11,7 +11,7 @@ connectDB();
 app.use("/api/users", require('./routes/apis/users'))
 app.use("/api/auth", require('./routes/apis/auth'))
 app.use("/api/post", require('./routes/apis/post'))
-app.use("/api/porfile", require('./routes/apis/profile'))
+app.use("/api/profile", require('./routes/apis/profile'))
 
 app.get( '/' , (req,res) => {
     res.send("api running")
