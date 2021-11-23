@@ -106,6 +106,20 @@ we need to create a schema
     is needed in order to create a model
     we make the schema by giveing it the fields we want
         bring in mongoose
+        create user schema 
+
+ -Request and body validation-
+ change GET req to POST req in route/api/user.js
+ add midelware so we can get the data from req.body
+  
+now we need some way to monitor if the user submits the wrong info
+    know as validation
+    this is were express validator comes in 
+    in /route/api/user.js
+        bring in check and validatorResult from express-validatorResult
+            * https://express-validator.github.io/docs/ - docs for express-validatorResult
+    
+  
 
 
 

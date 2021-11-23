@@ -6,6 +6,12 @@ const connectdb = require("./config/db");
 
 
 connectDB();
+
+
+// inti midleware 
+// allows us get the data in req.body
+app.use(express.json({extended:false}))
+
 // this is how we connect our route to our server
 // the the file/route path thats inside the require tells the server that its the same path in that folder 
 app.use("/api/users", require('./routes/apis/users'))
