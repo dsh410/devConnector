@@ -119,7 +119,11 @@ now we need some way to monitor if the user submits the wrong info
         bring in check and validatorResult from express-validatorResult
             * https://express-validator.github.io/docs/ - docs for express-validatorResult
     
-  
+  - User Registration- 
+  see if user exsits 
+    *if they exsit send a error
+get users gravatar order
+return jsonwebtoken
 
 
 
